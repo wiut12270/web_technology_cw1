@@ -1,0 +1,88 @@
+* {
+    outline: 1px red solid;
+    margin: 0;
+} 
+
+a {
+    text-decoration: none;
+}
+/* ******************* */
+
+body { 
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd700;
+    overflow: hidden;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+nav {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0 50px;
+}
+
+nav ul li {
+    margin-left: 50px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+nav ul li a {
+    color: black;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0;
+}
+
+.header-text > h2 {
+    font-family: 'droid_serif_italic';
+    font-size: 40px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.header-text > h1 {
+    font-family: 'montserrat_bold';
+    font-size: 75px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.button-y {
+    padding: 15px 50px;
+    background: white;
+    font-family: 'montserrat_bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
