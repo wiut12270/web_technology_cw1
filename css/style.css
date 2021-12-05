@@ -1,147 +1,457 @@
 /* * {
     outline: 1px red solid;
-    margin: 0;
 }  */
-
-html {
-	overflow-x: hidden;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 19px;
-    line-height: 2em;
-    overflow-x: hidden;
-}
-
-p, span { color: #999; }
-hr { 
-    border-top-color: #CCC; 
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 a {
     text-decoration: none;
 }
 
-/* ******************* */
-
-
-header {
-    background-color: #ffd700;
-	color: black;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 100;
-    width: 400px;
-    overflow-y: visible;     
+body { 
+    margin: 0;
 }
 
-.header-wrapper {
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    width: 100%;
-    height: 100%; 
+h2 {
+    font-family: 'montserrat_bold';
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+h3 {
+    font-family: 'montserrat_bold';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
 }
 
-.header-wrapper::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+h4 {
+    font-family: 'droid_serif_italic';
+    font-size: 16px;
+    text-align: center;
+    color: rgb(119, 119, 119);
 }
 
-.site-header {
-
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+h5 {
+    font-family: 'montserrat_regular';
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    margin-bottom: 0;
 }
 
-.site-logo img {
-    height: 100px;
+p {
+    font-family: 'roboto_slab_regular';
+    font-size: 14px;
+    color: rgb(119, 119, 119);
 }
 
-.nav { margin-bottom: 100px; }
-
-.nav-item {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.nav-link {
-    color: white;
-    background-color: transparent;
-    height: 50px;
-    width: 100%;
-	margin-left: -30px; 
-	margin-right: -60px; 
-    display: flex;
-    align-items: center;
-    font-size: 1.4rem;
-    padding: 30px;
-}
-
-.nav-item:hover .nav-link,
-.nav-item.active .nav-link
- {
-    color: black;;
-    background-color: white;
+.button-y {
+    padding: 15px 50px;
+    background: white;
+    font-family: 'montserrat_bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
     text-decoration: none;
 }
+/* ============================================= */
 
-.nav ul { position: relative; }
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd700;
+    /* background: url('../img/background.gif') 50% 50% / cover no-repeat; */
+    overflow: hidden;
+}
 
-.nav-item:hover:after,
-.nav-item.active:after {
-    content: '';
+.navbar-toggler {
+    display: none;
+}
+
+nav {
+    padding: 20px 0;
+    max-width: 1140px;
     width: 100%;
-    max-width: 200px;    
-    height: 75px;
-    display: block;
-    border: 1px solid white;
-    margin-left: 10px;
-    margin-top: -65px;
-    position: absolute;
-    z-index: -1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-link i { margin-right: 37px; }
-
-ul { 
-    margin: 0; 
-    padding: 0;
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0 50px;
 }
 
-.nav { margin-left: -30px; }
-
-header div .mb-65{
-    margin-left: 30px;
-    margin-top: 30px;
+nav ul li {
+    margin-left: 50px;
 }
 
-header div p{
-    margin-left: 30px;
-    margin-top: 30px;
+nav ul li a {
+    color: black;
+    font-family: 'montserrat_regular';
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.social-link {
-    display: inline-block;
-    background-color: white;    
-    font-size: 1.4rem;
-    width: 50px;
-    height: 50px;
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.header-text > h2 {
+    font-family: 'droid_serif_italic';
+    font-size: 40px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.header-text > h1 {
+    font-family: 'montserrat_bold';
+    font-size: 75px;
+    color: black;
+    text-transform: uppercase;
     text-align: center;
-    padding-top: 8px; 
-    margin-right: 15px;   
-    margin-bottom: 15px;
+    margin: 20px 0 30px 0;
+}
+
+
+/* ============================================= */
+
+.about-us{
+    padding: 80px 0;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.about-us-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-us-block > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 8px rgb(254, 209, 54) solid;
+    border-radius: 100%;
+}
+
+.about-us-block > div > h4 {
+    margin: 0;
+    font-family: 'montserrat_bold';
+    font-size: 24px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.about-us-block > h3 {
+    margin: 20px 0;
+}
+
+.about-us h4 {
+    margin-bottom: 25px;
+}
+
+/* ============================================= */
+
+.pricing {
+    padding: 80px 0;
+    display: flex;
+    background: url('../img/pricing.jpg') 50% 50% / cover no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pricing h2 {
+    color: white;
+}
+
+.pricing-options {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option:first-child {
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    border: none;
+    font-size: 1rem;
+    font-family: 'montserrat_bold';
+    border-radius: 10px 0 0 10px;
+}
+
+.option:last-child {
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    border: none;
+    font-size: 1rem;
+    font-family: 'montserrat_bold';
+    border-radius: 0 10px 10px 0;
+}
+
+.option-active {
+    background-color: rgb(254, 209, 54);
+    color: #fff;
+}
+
+.pricing-packages {
+    display: flex;
+    margin: 5rem 0;
+    justify-content: space-around;
+}
+
+.package {
+    width: 280px;
+    text-align: center;
+    background-color: #F8F8F8;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.package p {
+    font-family: 'montserrat_bold';
+}
+
+.package .button-y {
+    background: rgb(254, 209, 54);
+    margin-bottom: 2rem;
+}
+
+.package-type {
+    font-size: 1rem;
+    color: #696871;
+}
+
+.package-price {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.package-price > span {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.package-included {
+    margin-bottom: 2rem;
+}
+
+.package-included p {
+    padding: 1rem;
+    color: #696871;
+    font-size: 1.1rem;
+}
+
+.enhanced {
+    background-color: rgb(254, 209, 54);
+    transform: scale3d(1.1, 1.1, 1.1);
+    margin: 0 50px;
+}
+.enhanced .button-y {
+    display: inline-block;
+    background: white;
+}
+
+.enhanced .package-included p,
+.enhanced .package-price,
+.enhanced .package-type {
+    color: #fff;
 }
 
 
 
-.navbar-toggler { display: none; }
+.enhanced .package-link {
+    background-color: rgb(254, 209, 54);
+    color: #fff;
+}
+
+/* ============================================= */
+
+.courses {
+    padding: 80px 0;
+}
+
+.courses > div > h4 {
+    margin-bottom: 25px;
+}
+
+.courses-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.courses-img {
+    width: 290px;
+    height: 300px;
+}
+
+.courses-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.courses-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 120px;
+    text-align: center;
+    background: rgb(245, 245, 245);
+}
+
+/* ============================================= */
+
+.contact-us {
+    padding: 80px 0;
+    text-align: center;
+    background: url('../img/contact_us.jpg') 50% 50% / cover no-repeat;
+}
+
+.contact-us div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us > div > h2 {
+    color: rgb(255, 255, 255);
+}
+
+.contact-us > div > h4 {
+    margin-bottom: 20px;
+}
+
+.contact-us > div > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1240px;
+}
+
+.contact-us > div > form > div {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 100%;
+}
+
+.contact-us > div > form > a {
+    margin-top: 50px;
+}
+
+.contact-us-left,
+.contact-us-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contact-us-left > input,
+.contact-us-right > textarea {
+    padding: 20px 20px;
+    width: 80%;
+    margin-bottom: 30px;
+    border: 1px rgb(200, 200, 200) solid;
+    border-radius: 3px;
+}
+
+.contact-us-left > input::placeholder,
+.contact-us-right > textarea::placeholder {
+    font-family: 'montserrat_bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(187, 187, 187);
+}
+
+.contact-us-left > input:focus,
+.contact-us-right > textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgb(254, 209, 54);
+}
+
+.contact-us-right > textarea {
+    height: 194px;
+}
+
+/* ============================================= */
+
+.footer-block {
+    padding: 30px 0;
+}
+
+.footer-block h5 {
+    margin: 0;
+}
+
+.footer-block > div {
+    display: flex;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-center {
+    display: flex;
+}
+
+.footer-center > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 100%;
+    background: rgb(0, 0, 0);
+    font-family: 'ico';
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
