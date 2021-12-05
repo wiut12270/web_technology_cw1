@@ -375,8 +375,15 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     height: 194px;
 }
 
-.contact-us .button-y {
+.contact-us button {
+    padding: 15px 50px !important;
     background: rgb(254, 209, 54);
+    font-family: 'montserrat_bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
 }
 /* ============================================= */
 
