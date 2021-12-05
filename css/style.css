@@ -84,7 +84,6 @@ nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0 50px;
 }
 
 nav ul li {
@@ -94,7 +93,7 @@ nav ul li {
 nav ul li a {
     color: black;
     font-family: 'montserrat_regular';
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
