@@ -64,15 +64,15 @@
                 <form action="">
                     <div class="">
                         <div class="contact-us-left">
-                            <input type="text" placeholder="your Name *" required>
-                            <input type="text" placeholder="your e-mail *" required>
-                            <input type="text" placeholder="subject">
+                            <input id="sub-input-name" type="text" placeholder="your Name *" required>
+                            <input id="sub-input-email" type="text" placeholder="your e-mail *" required>
+                            <input id="sub-input-subject" type="text" placeholder="subject">
                         </div>
                         <div class="contact-us-right">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your message *" required></textarea>
+                            <textarea name="" id="sub-textarea" cols="30" rows="10" placeholder="Your message *" required></textarea>
                         </div>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" id="contact-subpage" onclick="validateSubInputs()">Send Message</button>
                 </form>
                 
             </div>
