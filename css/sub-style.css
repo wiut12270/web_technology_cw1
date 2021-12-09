@@ -151,7 +151,7 @@ header div p{
     margin-top: 30px;
 }
 
-
+.sub-navbar-toggler { display: none; }
 .navbar-toggler { display: none; }
 
 .mb-65 {
@@ -303,6 +303,49 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 /* ============================================= */
 
+.courses {
+    padding: 80px 0;
+}
+
+.courses .row{
+    flex-direction: column;
+}
+.courses figcaption {
+    margin-bottom: 25px;
+    font-family: 'droid_serif_italic';
+    font-size: 16px;
+    text-align: center;
+    color: rgb(119, 119, 119);
+}
+
+.courses-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.courses-img {
+    width: 290px;
+    height: 300px;
+}
+
+.courses-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.courses-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 120px;
+    text-align: center;
+    background: rgb(245, 245, 245);
+}
 /* ============================================= */
 
 .contact-us {
@@ -386,6 +429,40 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     text-decoration: none;
 }
 /* ============================================= */
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
 
+  #search {
+    padding: 40px 80px;
+  }
 
 /* ============================================= */

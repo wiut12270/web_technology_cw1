@@ -25,6 +25,12 @@
     .toggle-show {
         display: flex;
     }
+    /* .sub-header .toggle-show {
+        width: 30% !important;
+    }
+    header {
+        width: 0 !important;
+    } */
 }
 
 @media (max-width: 992px) {
@@ -76,7 +82,19 @@
     }
 
 
-      
+    .sub-navbar-toggler {
+        display: flex !important;
+        cursor: pointer;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    .sub-header {
+        width: 0 !important;
+    }
+    .sub-toggle-show {
+        width: 400px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -96,11 +114,11 @@
 
 @media (max-width: 576px) {
     .header-text > h2 {
-        font-size: 25px;
+        font-size: 25px !important;
     }
     
     .header-text > h1 {
-        font-size: 35px;
+        font-size: 35px !important;
     }
 
 }
