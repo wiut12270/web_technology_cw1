@@ -88,6 +88,7 @@
         position: relative;
         left: 20px;
         top: 20px;
+        background-color: rgb(254, 209, 54) !important;
     }
     .sub-header {
         width: 0 !important;
