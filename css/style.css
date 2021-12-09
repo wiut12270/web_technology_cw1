@@ -418,7 +418,7 @@ input[type=text], input[type=password] {
     padding: 80px 0;
 }
 
-.courses > div > figcaption {
+.courses figcaption {
     margin-bottom: 25px;
     font-family: 'droid_serif_italic';
     font-size: 16px;
